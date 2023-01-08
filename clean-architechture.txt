@@ -1,0 +1,15 @@
+dotnet new sln
+dotnet new gitignore
+dotnet new classlib --output .\src\Application
+dotnet new classlib --output .\src\Domain
+dotnet new classlib --output .\src\Infrastructure
+dotnet new webapi --output .\src\webapi
+
+dotnet sln add .\src\Application\
+dotnet sln add .\src\Domain\
+dotnet sln add .\src\Infrastructure\
+dotnet sln add .\src\WebApi\
+
+dotnet add .\src\WebApi\ reference .\src\Application\
+dotnet add .\src\WebApi\ reference .\src\Domain\
+dotnet add .\src\WebApi\ reference .\src\Infrastructure\

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Areegator.Agent.Domain</RootNamespace>
+    <AssemblyName>Areegator.Agent.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Events\" />
+    <Folder Include="Entities\" />
+    <Folder Include="ValuesObject\" />
+  </ItemGroup>
+
+</Project>
